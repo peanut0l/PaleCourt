@@ -146,6 +146,11 @@ namespace FiveKnights
                 "PANTH_ACH_TITLE", "PANTH_ACH_DESC", true);
 
             #endregion
+            #region Charms
+
+            charmIDs = CharmHelper.AddSprites(SPRITES["Mark_of_Purity"], SPRITES["Vessels_Lament"], SPRITES["Boon_of_Hallownest"], SPRITES["Abyssal_Bloom"]);
+
+            #endregion
 
             #region Hooks
 
@@ -420,8 +425,6 @@ namespace FiveKnights
             }, "LobsterLancer", JournalHelper.EntryType.Normal, null, true, true));
             #endregion
             #region Charms
-            charmIDs = CharmHelper.AddSprites(SPRITES["Mark_of_Purity"], SPRITES["Vessels_Lament"], SPRITES["Boon_of_Hallownest"], SPRITES["Abyssal_Bloom"]);
-
             preloadedGO["Bloom Anim Prefab"] = ABManager.AssetBundles[ABManager.Bundle.Charms].LoadAsset<GameObject>("BloomAnim");
             preloadedGO["Bloom Sprite Prefab"] = ABManager.AssetBundles[ABManager.Bundle.Charms].LoadAsset<GameObject>("AbyssalBloom"); 
             #endregion
